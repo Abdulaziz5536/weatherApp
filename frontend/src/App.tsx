@@ -1,30 +1,31 @@
-import React,{ useState } from 'react'
-import './App.css'
-import { getWeather } from './weather'
+import React, { useState } from "react";
+import SearchBar from "./components/searchBar";
+import WeatherCard from "./components/weatherCard";
+import { getWeather } from "./services/weatherService";
 
 const App: React.FC = () => {
-  const [city, setCity] = useState("");
   const [weather, setWeather] = useState<any>(null);
 
-  const fetchWeather = async () => {
-    const data = await getWeather(city);
-    setWeather(data);
+  const handleSearch = async (city: string) => {
+    try {
+      const data = await getWeather(city);
+      setWeather(data);
+    } catch (error) {
+      console.error("Error fetching weather:", error);
+    }
   };
 
   return (
-    <div>
-      <input value={city} onChange={(e) => setCity(e.target.value)} placeholder="Enter city"/>
-      <button onClick={fetchWeather}>Get Weather</button>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Weather App ☁️</h1>
 
-      {weather && (
-        <div>
-          <h2>{weather.name}</h2>
-          <p>{weather.main.temp}°C</p>
-          <p>{weather.weather[0].description}</p>
-        </div>
-      )}
+      <SearchBar onSearch={handleSearch} />
+
+      {weather && <WeatherCard weather={weather} />}
     </div>
   );
 };
 
-export default App
+export default App;
+
+
