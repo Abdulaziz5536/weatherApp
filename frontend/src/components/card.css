@@ -1,8 +1,4 @@
 
-.search-bar{
-  
-
-}
 .search-bar input{
   width: 600px;
   height: 30px;
@@ -30,6 +26,4 @@
   margin-left: -70px;
   margin-bottom: 50px;
 }
-.weather-card p{
-  
-}
+
