@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import SearchBar from "./components/searchBar";
-import WeatherCard from "./components/weatherCard";
+import SearchBar from "./components/SearchBar";
+import WeatherCard from "./components/WeatherCard";
 import { getWeather } from "./services/weatherService";
 
 const App: React.FC = () => {
