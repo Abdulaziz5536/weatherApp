@@ -42,29 +42,11 @@ src/
 
 ## ⚙️ Installation & Setup
 
-1. Clone the repository:
+ Clone the repository:
 
 ```
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
-```
-
-2. Install dependencies:
-
-```
-npm install
-```
-
-3. Create a `.env` file in the root:
-
-```
-VITE_API_KEY=your_api_key_here
-```
-
-4. Start the development server:
-
-```
-npm run dev
 ```
 
 ---
@@ -88,7 +70,10 @@ This project is deployed using **Vercel**.
 
 ## 📸 Screenshots
 
-*(Add screenshots of your app here)*
+
+<img width="1919" height="894" alt="Ekran görüntüsü 2026-04-08 151748" src="https://github.com/user-attachments/assets/6754ee69-5f9f-498b-b41e-a370c3ce5c2b" />
+<img width="1919" height="912" alt="Ekran görüntüsü 2026-03-29 205733" src="https://github.com/user-attachments/assets/71f1f597-438f-4ba7-b4e7-3edaaa855c1e" />
+<img width="1919" height="903" alt="Ekran görüntüsü 2026-04-08 151732" src="https://github.com/user-attachments/assets/9709af56-fab2-4108-833f-9b5f763c2d7c" />
 
 ---
 
